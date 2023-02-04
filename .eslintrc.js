@@ -1,0 +1,45 @@
+module.exports = {
+    env: {
+        browser: true,
+        es2021: true
+    },
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true
+        },
+        sourceType: 'module',
+        ecmaVersion: 12
+    },
+    plugins: ['react', '@typescript-eslint'],
+    extends: [
+        'plugin:@next/next/recommended',
+        'airbnb',
+        'eslint:recommended',
+        'eslint-config-prettier'
+    ],
+    rules: {
+        'import/no-unresolved': 0,
+        'import/prefer-default-export': 0,
+        'prefer-const': 0,
+        'react/jsx-filename-extension': [1, { extensions: ['.jsx', '.tsx'] }],
+        'react/jsx-props-no-spreading': 0,
+        'react/prop-types': 0,
+        'react/react-in-jsx-scope': 0,
+        'react/jsx-indent': 0,
+        'react/jsx-indent-props': 0,
+        'react/jsx-one-expression-per-line': 0,
+        'react/jsx-closing-tag-location': 0,
+        'react/destructuring-assignment': 0,
+        'jsx-a11y/anchor-is-valid': 0,
+        'import/extensions': 0,
+        'consistent-return': 0,
+        'prefer-template': 0,
+        'arrow-body-style': 0
+    },
+    ignorePatterns: [
+        'next.config.js',
+        'postcss.config.js',
+        'tailwind.config.js'
+    ]
+}
