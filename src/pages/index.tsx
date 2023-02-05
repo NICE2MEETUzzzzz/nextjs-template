@@ -1,4 +1,4 @@
-import OpenGraph from '@/components/shared/open-graph'
+import OpenGraph from '@shared/open-graph'
 
 export default function Index() {
   return (

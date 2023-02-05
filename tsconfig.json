@@ -16,7 +16,17 @@
         "incremental": true,
         "baseUrl": ".",
         "paths": {
-            "@/*": ["./src/*"]
+            "@pages": ["src/pages/index.ts"],
+            "@pages/*": ["src/pages/*"],
+            "@components": ["src/components/index.ts"],
+            "@components/*": ["src/components/*"],
+            "@shared": ["src/components/shared/index.ts"],
+            "@shared/*": ["src/components/shared/*"],
+            "@modules": ["src/components/modules/index.ts"],
+            "@modules/*": ["src/components/modules/*"],
+            "@styles/*": ["src/styles/*"],
+            "@public/*": ["public/*"],
+            "@/*": ["*"]
         },
         "types": ["node"]
     },
